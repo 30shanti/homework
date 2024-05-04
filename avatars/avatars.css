@@ -1,0 +1,90 @@
+
+
+.user-wrapper{
+
+  padding: 250px;
+
+}
+.user{
+  position: relative;
+}
+
+
+.user img{
+width: 64px;
+height: 64px;
+border-radius: 50%;
+
+}
+
+.status {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color:#DBDBDB;;
+  position: absolute;
+  left: 45px;
+  bottom: 5px;
+}
+
+.user:nth-child(2) .status{
+  background-color:#4CFE88;
+
+}
+.user:nth-child(4) .status{
+  background-color:#4CFE88;
+
+}
+.user:nth-child(5) .status{
+  background-color:#4CFE88;
+
+}
+.user:nth-child(6) .status{
+  background-color:#4CFE88;
+
+}
+
+.user:nth-child(-n+4) {
+  float: left;
+  margin-right: 20px;
+}
+
+.user:nth-child(5) {
+  clear: left;
+  margin-right: 20px;
+}
+
+.user:nth-child(n+5) {
+ float: left;
+  
+  margin-right: 20px;
+}
+
+
+/* .user:nth-child(-n+3){
+  float: left;
+  clear: right;
+  margin-right:20px;
+  }
+
+.user:nth-child(n+5){
+float: left;
+margin-right:20px;
+} */
+
+
+
+
+
+
+@supports(display:flex){
+
+.user-wrapper{
+  display: flex;
+ flex-flow: row wrap-reverse;
+ 
+}
+
+
+}
