@@ -60,6 +60,8 @@ float: left;
 margin-right:20px;
 } 
 ```
+##### 결과
+![float result](/images/0504%20결과%20float.png)
 --------
 #### Flex 활용하기
 
@@ -77,5 +79,6 @@ margin-right:20px;
 ```
 supports 로 flex를 지원하는 브라우저에서는 위의 코드가 실행되게끔 우선순위에 배치해주고 user-wrapper요소를 flex로 설정해준 다음 row, wrap-reverse로 줄배치를 바꿔준다
 
-
+##### 결과
+![float result](/images/0504%20결과.png)
 
