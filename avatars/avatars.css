@@ -2,8 +2,8 @@
 
 .user-wrapper{
 
-  padding: 250px;
-
+  width: 400px;
+padding: 300px 500px ;
 }
 .user{
   position: relative;
