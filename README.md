@@ -4,3 +4,7 @@
 
 ## 0504 과제: Avatars
 [과제 설명](./avatars/avatars.md)
+
+
+## 0511 과제: Naver
+[과제 설명](/naver/naver.md)

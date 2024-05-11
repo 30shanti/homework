@@ -1,1 +1,59 @@
-<!-- HTML 마크업을 작성해 주세요 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문서 제목</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/naver/naver.css" />
+  </head>
+  <body>
+<section class="login">
+ <!-- 로고 -->
+  
+ <a class="logo" href="https://www.naver.com/"><img src="/naver/logo.svg" alt="네이버 로고" class="logo-img"/></a>
+
+    <form action="/" class="login-form">
+      <fieldset>
+        <legend class="sr-only">로그인 폼</legend>
+<!-- 아이디 입력서식 -->
+        <div role="group" class="login-input-group">
+        <div role="group" class="form-input">
+          <input type="email" id="userId" name="userID" required placeholder="아이디(이메일)" />
+        </div>
+<!-- 비밀번호 입력서식 -->
+        <div role="group" class="form-input">
+          <input type="password" id="userPwd" name="userPwd" required placeholder="비밀번호" />
+        </div>
+<!-- 로그인 버튼 -->
+      </div>
+      <button type="submit" class="login-button button" >로그인</button>
+      </fieldset>
+    </form>
+<!-- 로그인 상태유지/IP -->
+<ul class="checkbox">
+  <!-- 로그인 상태유지 -->
+  <li>
+    <div class="login-checkbox" tabindex="0">
+      <input type="checkbox" id="login-save-info" />
+      <label for="login-save-info">로그인 상태유지</label>
+    </div>
+  </li>
+  <!-- IP보안 -->
+  <li class="ip-checkbox" tabindex="0">
+    <a href="/naver/ip_security.html">IP보안</a>
+    <input type="checkbox" name="ip-on-off" id="ip-on-off" />
+    <label for="ip-on-off"></label>
+</li>
+
+</ul>
+
+</section>
+
+
+  </body>
+</html>

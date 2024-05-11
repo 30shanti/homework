@@ -1,1 +1,234 @@
-/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+:root{
+--primary-color:#03cf5d;
+--bg-color:#fff;
+--sub-color:#181818;
+--font-size:1rem;
+
+box-sizing: border-box;
+
+} 
+
+a{
+  color: inherit;
+  text-decoration: none;
+  
+}
+
+ul, ol{
+  list-style: none;
+  padding-left: 0;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+
+fieldset{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea, select, option, button{
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{
+font-size: 1rem;
+margin: 0;
+padding: 0;
+border: 0;
+line-height: 1.15;
+}
+
+/* 버튼 컴포넌트 */
+
+.login-button{
+  background-color: var(--primary-color);
+  border: 0;
+  color: var(--bg-color);
+line-height: 2.8125rem;
+margin-top: 0.625rem;
+
+}
+
+ 
+    
+/* input 컴포넌트 */
+.form-input{
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+
+
+input{
+flex-grow: 1;
+width: 100%;
+font-size: 0.875rem;
+height: 2.8125rem;
+inline-size: 2.8125rem;
+border: 1px solid #dadada;
+background-color: var(--bg-color);
+
+}
+
+input:focus {
+  background-color: #e9f0fd;
+  outline: 1px solid var(--primary-color);
+ border: 0;
+
+}
+
+
+}
+
+
+.checkbox{
+  
+  #ip-on-off {
+    display: none;
+   
+  }
+ 
+  #ip-on-off:checked + label::after {
+    content: "ON";
+    color: var(--primary-color);
+    
+  }
+  #ip-on-off:not(:checked) + label::after { 
+    content: "OFF";
+    color: var(--sub-color); 
+  }
+
+
+}
+/* 로그인 */
+.login{
+
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-content: center;
+
+/* 로고 */
+.logo{
+ display: flex;
+ justify-content: center;
+  margin:6rem 3rem 2rem 3rem;
+  
+img{
+  width: 15.625rem;
+  }
+  }
+
+
+  
+
+
+/* 로그인 폼 */
+  .login-form{
+  margin: 0 1.25rem;
+  
+
+    fieldset{
+      display: flex;
+      flex-flow: row wrap;
+     
+  
+    .login-input-group{
+      
+      display: flex;
+      flex-flow: column nowrap;
+      flex-grow: 1;
+      width: 100%;
+      }
+      
+    }
+
+    
+  }
+  
+/* 로그인 버튼 */
+ .button{
+justify-content: center;
+display: flex;
+flex-flow: row nowrap;
+flex-grow: 1;
+width: 100%;
+  
+ }
+
+
+/* 로그인 상태유지/IP */
+.checkbox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: right;
+  margin: 0.625rem 1rem 0 1rem;
+  
+}
+/* 로그인 상태유지 아이콘 이미지 */
+.login-checkbox{
+
+  
+
+  input{
+    
+    appearance: none;
+   
+  }
+
+  label[for="login-save-info"]{
+  
+    background: url(/naver/icons/unchecked.svg) no-repeat 0 0 /1.5rem 1.5rem ;
+   cursor: pointer;
+   padding: 0 0 1rem 1.8125rem;
+   }
+
+   input:checked + label{
+    background-image: url(/naver/icons/checked.svg);
+    
+} 
+ 
+}
+
+
+/* 모바일 환경에서 ip 보안 숨김 */
+.ip-checkbox {
+  display: none;
+
+}
+
+/* 데스크탑 환경에서 ip보안 on/off */
+@media (min-width: 48rem) {
+  .checkbox{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 280px;
+
+  .ip-checkbox {
+     
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+}
+
+.login-form {
+  
+  margin: 0 auto; 
+  max-width: 500px; 
+  width: 100%;
+}
+
+  
+}
+}
+
+
+
+ 
+
