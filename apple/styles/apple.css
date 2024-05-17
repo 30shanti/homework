@@ -1,0 +1,149 @@
+@import url(card-component.css);
+@import url(theme.css);
+/* 카드 레이아웃 */
+
+a{
+  text-decoration: none;
+}
+h1, p, a{
+margin: 0;
+padding: 0;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.card-wrapper{
+display: flex;
+flex-flow: column nowrap;
+gap: 10px;
+
+
+
+
+
+
+
+.grid{
+  
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+
+}
+/* 이미지 변경 */
+.ipad-air{
+
+  background-image: image-set(
+          url('/apple/products/ipad_air.jpeg') 1x,
+          url('/apple/products/ipad_air_2x.jpeg') 2x
+      );
+}
+.iphone15-pro{
+
+  background-image: image-set(
+          url('/apple/products/iphone15_pro.jpeg') 1x,
+          url('/apple/products/iphone15_pro_2x.jpeg') 2x
+      );
+}
+.iphone15{
+
+  background-image: image-set(
+          url('/apple/products/iphone15.jpeg') 1x,
+          url('/apple/products/iphone15_2x.jpeg') 2x
+      );
+}
+.watch{
+
+  background-image: image-set(
+          url('/apple/products/apple_watch.jpeg') 1x,
+          url('/apple/products/apple_watch_2x.jpeg') 2x
+      );
+}
+.macbook-air{
+
+  background-image: image-set(
+          url('/apple/products/macbook_air.jpeg') 1x,
+          url('/apple/products/macbook_air_2x.jpeg') 2x
+      );
+}
+.airpods-pro{
+
+  background-image: image-set(
+          url('/apple/products/airpods_pro.jpeg') 1x,
+          url('/apple/products/airpods_pro_2x.jpeg') 2x
+      );
+}
+
+.iphone15{
+  order: -1;
+}
+.watch{
+  order: 0;
+}
+.macbook-air{
+  order: 1;
+}
+.airpods-pro{
+  order: 2;
+}
+
+
+}
+
+/* 짝수 번째 링크/텍스트 버튼 색상 변경 */
+.card:nth-child(even){
+  .text{
+h1, p.subhead{
+  color: var(--black);
+}
+
+  }
+  .link{
+
+  .more{
+    background-color: var(--black);
+    color: white;
+  padding: var(--x-small-spacing) var(--small-spacing);
+  
+  }
+  .price{
+  color: var(--black);
+  border: 1px solid var(--black);
+  padding: var(--x-small-spacing) var(--small-spacing);
+  }
+  }
+}
+
+@media(min-width:1024px){
+.card-wrapper{
+
+  .iphone15-pro{
+
+    background-image: image-set(
+            url('/apple/products/iphone15_pro_wide.jpeg') 1x,
+            url('/apple/products/iphone15_pro_wide_2x.jpeg') 2x
+        );
+  }
+
+  .grid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+  }
+}
+.iphone15{
+  order: -1;
+}
+.watch{
+  order: 0;
+}
+.macbook-air{
+  order: 1;
+}
+.airpods-pro{
+  order: 2;
+}
+}

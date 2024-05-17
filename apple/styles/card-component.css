@@ -1,0 +1,70 @@
+.card{
+  padding-top: var(--large-spacing);
+  height: var(--size);
+  gap:var(--small-spacing) ;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: var(--white);
+  background-image: image-set(
+          url('/apple/products/ipad_pro.jpeg') 1x,
+          url('/apple/products/ipad_pro_2x.jpeg') 2x
+      );
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  /* 글자 */
+  
+  .text{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap:var(--x-small-spacing);
+  
+  h1{
+  font-size: var(--large-text);
+  
+  }
+  
+  .subhead{
+    font-size: var(--base-text);
+    /* margin-bottom: var(--x-small-spacing); */
+    line-height: var(--line-normal);
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .date{
+    font-size: var(--small-text);
+    color: var(--gray);
+    font-weight: 600;
+    
+    }
+  }
+      /* 링크 버튼*/
+  .link{
+    gap: var(--base-spacing);
+    display: flex;
+  
+    .more, .price{
+      
+      font-size: var(--xx-small-text);
+      padding: var(--x-small-spacing);
+      border-radius: 15px;
+  }
+  .more{
+    background-color: var(--blue-300);
+    color: white;
+  padding: var(--x-small-spacing) var(--small-spacing);
+  
+  }
+  .price{
+  color: var(--blue-300);
+  border: 1px solid var(--blue-300);
+  padding: var(--x-small-spacing) var(--small-spacing);
+  }
+  
+  }
+  
+  
+    }
