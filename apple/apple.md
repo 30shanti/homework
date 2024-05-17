@@ -310,6 +310,6 @@ grid-template-columns: 1fr 1fr;
 1. media를 활용하여 1024px이상인 스크린에서는 아이폰 15 프로의 이미지를 가로로 바꾸고 4개의 카드를 그리드로 배치한다.
 마크업상의 순서도 바꿔준다.
 
-######결과
+###### 결과
 
 ![2-3](https://github.com/30shanti/homework/assets/163807807/324c46a1-7f76-479c-b506-9a6329c10627)
