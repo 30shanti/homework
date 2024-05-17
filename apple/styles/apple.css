@@ -19,19 +19,14 @@ body{
 .card-wrapper{
 display: flex;
 flex-flow: column nowrap;
-gap: 10px;
-
-
-
-
-
+gap: var(--small-spacing);
 
 
 .grid{
   
   display: flex;
   flex-flow: column nowrap;
-  gap: 10px;
+  gap: var(--small-spacing);
 
 }
 /* 이미지 변경 */
